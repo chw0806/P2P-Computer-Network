@@ -21,14 +21,14 @@ public class ActualMessage {
 	}
 
 	public int messageLength;
-	public MessageType messageType;
 	public MessagePayload payload;
+	public MessageType messageType;
 	
 	public ActualMessage() {}
 	
 	public ActualMessage(int messageLength, MessageType messageType) {
-		this.messageLength = messageLength;
 		this.messageType = messageType;
+		this.messageLength = messageLength;
 	}
 	
 	public ActualMessage(int messageLength, MessageType messageType, MessagePayload payload) {
