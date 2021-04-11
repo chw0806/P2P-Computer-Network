@@ -68,7 +68,7 @@ public class PreferredNeighbors extends UnchokeNeighbour implements Runnable {
 	private void handlePreferredNeighbor() throws IOException {
 		System.out.println("Start selecting the preferred neighbors");
 		List<Integer> highRateList = testDownloadSpeed();
-		System.out.println("Finish the selection and four selected neighbors are below: ");
+		System.out.println('\n' + "Finish the selection and four selected neighbors are below: ");
 
 		synchronized (neighborManager.preferredNeighborsSet) {
 			for (Integer key : highRateList) {
@@ -137,7 +137,7 @@ public class PreferredNeighbors extends UnchokeNeighbour implements Runnable {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		System.out.println("The procedure of PreferredNeighbors ends!");
+		System.out.println('\n' + "The procedure of PreferredNeighbors ends!");
 	}
 
 }
