@@ -56,17 +56,30 @@ public class ActualMessage {
 		//The input stream has got enough information
 		byte[] intArray = new byte[Integer.BYTES];
 		in.read(intArray, 0, Integer.BYTES);
-		
-		messageLength = convertBytesToInteger(intArray);
-		messageType = MessageType.values()[in.read()];
 
-		System.out.print("");
-		System.out.print(messageType.ordinal() + " ");
+		messageType = MessageType.values()[in.read()];
+		messageLength = convertBytesToInteger(intArray);
+
+		/*
+		switch (messageType.ordinal()){
+			case 0: {System.out.print("choke ");} break;
+			case 1: {System.out.print("unchoke ");} break;
+			case 2: {System.out.print("interested ");} break;
+			case 3: {System.out.print("not interested ");} break;
+			case 4: {System.out.print("have ");} break;
+			case 5: {System.out.print("bitfield ");} break;
+			case 6: {System.out.print("request ");} break;
+			case 7: {System.out.print("piece ");} break;
+		}*/
+
+
+		//System.out.print(messageType.ordinal() + " ");
 		
 		switch(messageType) {
-			case have: case request: {
+			case have: {
 				payload = new MessagePayload();
-				byte[] indexArray = new byte[Integer.BYTES];
+				byte[] indexArray;
+				indexArray = new byte[Integer.BYTES];
 				in.read(indexArray, 0, Integer.BYTES);
 
 				payload.pieceIndex = convertBytesToInteger(indexArray);
@@ -74,15 +87,25 @@ public class ActualMessage {
 			break;
 			case bitfield: {
 				payload = new MessagePayload();
-				byte[] bitFieldArray = new byte[messageLength - Constant.MINIMUM_SIZE];
+				byte[] bitFieldArray;
+				bitFieldArray = new byte[messageLength - Constant.MINIMUM_SIZE];
 				in.read(bitFieldArray, 0, bitFieldArray.length);
 				BitField bitField = new BitField(bitFieldArray);
 				payload.bitField = bitField;
 			}
 			break;
-			case piece: {
+			case request: {
 				payload = new MessagePayload();
 				byte[] indexArray = new byte[Integer.BYTES];
+				in.read(indexArray, 0, Integer.BYTES);
+
+				payload.pieceIndex = convertBytesToInteger(indexArray);
+			}
+			break;
+			case piece: {
+				payload = new MessagePayload();
+				byte[] indexArray;
+				indexArray = new byte[Integer.BYTES];
 				in.read(indexArray, 0, Integer.BYTES);
 				
 				payload.pieceIndex = convertBytesToInteger(indexArray);
