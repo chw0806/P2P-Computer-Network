@@ -19,18 +19,26 @@ public class BitField {
 	
 	public BitField(int pieceNumber, boolean hasFile) {
 		pieceNum = pieceNumber;
-		int offset = pieceNum % Constant.BYTE_SIZE;
-		offset = (offset == 0) ? Constant.BYTE_SIZE : offset;
-		int size = pieceNum/Constant.BYTE_SIZE + (offset==Constant.BYTE_SIZE ? 0 : 1);
+		int offset, size, offset_size;
+
+		offset = pieceNum % Constant.BYTE_SIZE;
+		//offset = (offset == 0) ? Constant.BYTE_SIZE : offset;
+		if(offset == 0) offset = Constant.BYTE_SIZE;
+		else offset = offset;
+
+		//size = pieceNum/Constant.BYTE_SIZE + (offset==Constant.BYTE_SIZE ? 0 : 1);
+		offset_size = (offset == Constant.BYTE_SIZE) ? 0 : 1;
+		size = pieceNum/Constant.BYTE_SIZE + offset_size;
+
 		bitFieldArray = new byte[size];
-		if(!hasFile) {
+		if(hasFile) {
+			//Initialize the bit field array to -1
+			for(int i = 0; i < size - 1; i++)
+				bitFieldArray[i] = Constant.MAX_BYTE;
+		}else { // !hasFile
 			//Initialize the bit field array to 0
 			for(int i = 0; i < size - 1; i++)
 				bitFieldArray[i] = Constant.MIN_BYTE;
-		}else {
-			//Initialize the bit field array to 1
-			for(int i = 0; i < size - 1; i++)
-				bitFieldArray[i] = Constant.MAX_BYTE;
 		}
 		//Set the value of last byte
 		for(int i = 0; i < Constant.BYTE_SIZE; i++) {
@@ -42,21 +50,21 @@ public class BitField {
 		}	
 	}
 	
-	public boolean checkIfInterested(BitField serverBitField) {
-		String clientBitString = this.toString();
-		String serverBitString = serverBitField.toString();
-		for(int i=0; i<clientBitString.length(); i++) {
-			if(clientBitString.charAt(i) == '0' && serverBitString.charAt(i) == '1')
-				return true;
-		}
-		return false;
-	}
-	
 	public boolean checkIfInterested(BitField serverBitField, Set<Integer> inFlightSet) {
 		String clientBitString = this.toString();
 		String serverBitString = serverBitField.toString();
 		for(int i=0; i<clientBitString.length(); i++) {
 			if(clientBitString.charAt(i) == '0' && serverBitString.charAt(i) == '1' && !inFlightSet.contains(i))
+				return true;
+		}
+		return false;
+	}
+
+	public boolean checkIfInterested(BitField serverBitField) {
+		String clientBitString = this.toString();
+		String serverBitString = serverBitField.toString();
+		for(int i=0; i<clientBitString.length(); i++) {
+			if(clientBitString.charAt(i) == '0' && serverBitString.charAt(i) == '1')
 				return true;
 		}
 		return false;
@@ -94,11 +102,25 @@ public class BitField {
 	}
 	
 	public void updateBitField(int offset) {
-		int index = offset / Constant.BYTE_SIZE;
-		int remain = offset % Constant.BYTE_SIZE;
+		int index, remain;
+		index = offset / Constant.BYTE_SIZE;
+		remain = offset % Constant.BYTE_SIZE;
 		bitFieldArray[index] += (int)Math.pow(2, (7-remain));
 	}
-	
+
+	private String byteToString(byte b) {
+		if(b>=0) {
+			char[] chars = Integer.toBinaryString(b ^ 0x00FF).toCharArray();
+			for(int i=0;i<chars.length;i++) {
+				if(chars[i]=='0') chars[i]='1';
+				else chars[i]='0';
+			}
+			return new String(chars);
+		}else {
+			return Integer.toBinaryString(b & 0x00FF);
+		}
+	}
+
 	public boolean checkBitField(int offset) {
 		int index = offset / Constant.BYTE_SIZE;
 		int remain = offset % Constant.BYTE_SIZE;
@@ -114,17 +136,6 @@ public class BitField {
 		return bitFieldString;
 	}
 	
-	private String byteToString(byte b) {
-		if(b>=0) {
-			char[] chars = Integer.toBinaryString(b ^ 0x00FF).toCharArray();
-			for(int i=0;i<chars.length;i++) {
-				if(chars[i]=='0') chars[i]='1';
-				else chars[i]='0';
-			}
-			return new String(chars);
-		}else {
-			return Integer.toBinaryString(b & 0x00FF);
-		}
-	}
-	
+
+
 }
