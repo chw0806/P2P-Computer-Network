@@ -84,7 +84,7 @@ public class Client implements Runnable {
 				+ " and client of peer " + serverInfo.peerID + " has been initialized");
 	}
 	
-	private void exchangeHandshakeMessage() throws IOException, ClassNotFoundException, InterruptedException {
+	private void exchangeHandshakeMessage() throws IOException, InterruptedException {
 		HandshakeMessage firstHandshake = new HandshakeMessage(thisInfo.peerID);
 		firstHandshake.writeHandshakeMessage(out);
 		System.out.println("Send a handshake message to peer " + serverInfo.peerID);
@@ -93,7 +93,7 @@ public class Client implements Runnable {
 		System.out.println("Get a handshake message from peer " + serverInfo.peerID);
 	}
 	
-	private void sendBitfieldMessage() throws IOException, ClassNotFoundException {
+	private void sendBitfieldMessage() throws IOException {
 		//Send bit field message to the server
 		MessagePayload clientPayLoad = new MessagePayload(thisInfo.bitField);
 		ActualMessage clientBitFieldMessage = new ActualMessage(INT_SIZE + MESSAGE_TYPE_SIZE + 
@@ -125,7 +125,6 @@ public class Client implements Runnable {
 	
 	public void handleHaveMessage(ActualMessage haveMessage) throws IOException {
 		(new Log(thisInfo.peerID)).ReceiveHaveMessageLog(thisInfo.peerID, serverInfo.peerID, haveMessage.payload.pieceIndex);
-//		System.out.println("Get a have message(" + haveMessage.payload.pieceIndex + ") from peer " + serverInfo.peerID);
 		serverInfo.bitField.updateBitField(haveMessage.payload.pieceIndex);
 		synchronized(downloadMap) {
 			downloadMap.replace(serverInfo.peerID, downloadMap.get(serverInfo.peerID), downloadMap.get(serverInfo.peerID) + 1);
@@ -153,20 +152,19 @@ public class Client implements Runnable {
 		}
 	}
 	
-	private void sendRequestMessage() throws IOException, InterruptedException {
+	private void sendRequestMessage() throws IOException {
 		if(!thisInfo.checkInterested(serverInfo, inFlightSet)) {
 			sendInterestedMessage(false);
 			return;
 		}
 		int piece = thisInfo.bitField.askForRequest(serverInfo.bitField);
 		while (inFlightSet.contains(piece)) {
-//			System.out.println(thisInfo.bitField.toString());
 			piece = thisInfo.bitField.askForRequest(serverInfo.bitField);
 		}
 		MessagePayload payload = new MessagePayload(piece);
 		ActualMessage requestMessage = new ActualMessage(2*INT_SIZE + MESSAGE_TYPE_SIZE, MessageType.request, payload);
 		requestMessage.writeActualMessage(out);
-//		System.out.println("Send a request message(" + piece + ") to peer " + serverInfo.peerID);
+
 		synchronized (inFlightSet) {
 			inFlightSet.add(piece);
 		}

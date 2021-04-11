@@ -319,3 +319,203 @@
 [2021-04-10 21:53:36] Peer 1001 received the 'have' message from Peer 1002 for the piece [113].
 [2021-04-10 21:53:36] Peer 1001 received the 'not interested' message from Peer 1002.
 [2021-04-10 21:53:36] Peer 1001 received the 'have' message from Peer 1002 for the piece [23].
+[2021-04-11 13:51:43] Peer 1001 is connected from Peer 1002.
+[2021-04-11 13:51:43] Peer 1001 has the preferred neighbors:.
+[2021-04-11 13:51:46] Peer 1001 has downloaded the complete file.
+[2021-04-11 13:51:46] Peer 1001 received the 'interested' message from Peer 1002.
+[2021-04-11 13:51:48] Peer 1001 has the preferred neighbors: Peer 1002,.
+[2021-04-11 13:51:48] Peer 1001 received the 'have' message from Peer 1002 for the piece [49].
+[2021-04-11 13:51:49] Peer 1001 received the 'have' message from Peer 1002 for the piece [17].
+[2021-04-11 13:51:49] Peer 1001 received the 'have' message from Peer 1002 for the piece [96].
+[2021-04-11 13:51:49] Peer 1001 received the 'have' message from Peer 1002 for the piece [112].
+[2021-04-11 13:51:49] Peer 1001 received the 'have' message from Peer 1002 for the piece [111].
+[2021-04-11 13:51:49] Peer 1001 received the 'have' message from Peer 1002 for the piece [95].
+[2021-04-11 13:51:49] Peer 1001 received the 'have' message from Peer 1002 for the piece [94].
+[2021-04-11 13:51:49] Peer 1001 received the 'have' message from Peer 1002 for the piece [70].
+[2021-04-11 13:51:49] Peer 1001 received the 'have' message from Peer 1002 for the piece [44].
+[2021-04-11 13:51:50] Peer 1001 received the 'have' message from Peer 1002 for the piece [29].
+[2021-04-11 13:51:50] Peer 1001 received the 'have' message from Peer 1002 for the piece [106].
+[2021-04-11 13:51:50] Peer 1001 received the 'have' message from Peer 1002 for the piece [63].
+[2021-04-11 13:51:50] Peer 1001 received the 'have' message from Peer 1002 for the piece [51].
+[2021-04-11 13:51:50] Peer 1001 received the 'have' message from Peer 1002 for the piece [105].
+[2021-04-11 13:51:50] Peer 1001 received the 'have' message from Peer 1002 for the piece [77].
+[2021-04-11 13:51:50] Peer 1001 received the 'have' message from Peer 1002 for the piece [45].
+[2021-04-11 13:51:51] Peer 1001 received the 'have' message from Peer 1002 for the piece [104].
+[2021-04-11 13:51:51] Peer 1001 received the 'have' message from Peer 1002 for the piece [79].
+[2021-04-11 13:51:51] Peer 1001 received the 'have' message from Peer 1002 for the piece [46].
+[2021-04-11 13:51:51] Peer 1001 received the 'have' message from Peer 1002 for the piece [64].
+[2021-04-11 13:51:51] Peer 1001 received the 'have' message from Peer 1002 for the piece [22].
+[2021-04-11 13:51:51] Peer 1001 received the 'have' message from Peer 1002 for the piece [19].
+[2021-04-11 13:51:51] Peer 1001 received the 'have' message from Peer 1002 for the piece [11].
+[2021-04-11 13:51:52] Peer 1001 received the 'have' message from Peer 1002 for the piece [50].
+[2021-04-11 13:51:52] Peer 1001 received the 'have' message from Peer 1002 for the piece [61].
+[2021-04-11 13:51:52] Peer 1001 received the 'have' message from Peer 1002 for the piece [115].
+[2021-04-11 13:51:52] Peer 1001 received the 'have' message from Peer 1002 for the piece [12].
+[2021-04-11 13:51:52] Peer 1001 received the 'have' message from Peer 1002 for the piece [37].
+[2021-04-11 13:51:52] Peer 1001 received the 'have' message from Peer 1002 for the piece [27].
+[2021-04-11 13:51:52] Peer 1001 received the 'have' message from Peer 1002 for the piece [122].
+[2021-04-11 13:51:53] Peer 1001 received the 'have' message from Peer 1002 for the piece [80].
+[2021-04-11 13:51:53] Peer 1001 received the 'have' message from Peer 1002 for the piece [113].
+[2021-04-11 13:51:53] Peer 1001 received the 'have' message from Peer 1002 for the piece [20].
+[2021-04-11 13:51:53] Peer 1001 received the 'have' message from Peer 1002 for the piece [14].
+[2021-04-11 13:51:53] Peer 1001 has the optimistically unchoked neighbor: Peer 1002.
+[2021-04-11 13:51:53] Peer 1001 received the 'have' message from Peer 1002 for the piece [56].
+[2021-04-11 13:51:53] Peer 1001 has the preferred neighbors:.
+[2021-04-11 13:51:53] Peer 1001 received the 'have' message from Peer 1002 for the piece [13].
+[2021-04-11 13:51:53] Peer 1001 received the 'have' message from Peer 1002 for the piece [25].
+[2021-04-11 13:51:53] Peer 1001 received the 'have' message from Peer 1002 for the piece [107].
+[2021-04-11 13:51:53] Peer 1001 received the 'have' message from Peer 1002 for the piece [84].
+[2021-04-11 13:51:54] Peer 1001 received the 'have' message from Peer 1002 for the piece [97].
+[2021-04-11 13:51:54] Peer 1001 received the 'have' message from Peer 1002 for the piece [126].
+[2021-04-11 13:51:54] Peer 1001 received the 'have' message from Peer 1002 for the piece [15].
+[2021-04-11 13:51:54] Peer 1001 received the 'have' message from Peer 1002 for the piece [73].
+[2021-04-11 13:51:54] Peer 1001 received the 'have' message from Peer 1002 for the piece [9].
+[2021-04-11 13:51:54] Peer 1001 received the 'have' message from Peer 1002 for the piece [58].
+[2021-04-11 13:51:54] Peer 1001 received the 'have' message from Peer 1002 for the piece [74].
+[2021-04-11 13:51:54] Peer 1001 received the 'have' message from Peer 1002 for the piece [65].
+[2021-04-11 13:51:54] Peer 1001 received the 'have' message from Peer 1002 for the piece [100].
+[2021-04-11 13:51:54] Peer 1001 received the 'have' message from Peer 1002 for the piece [124].
+[2021-04-11 13:51:54] Peer 1001 received the 'have' message from Peer 1002 for the piece [57].
+[2021-04-11 13:51:54] Peer 1001 received the 'have' message from Peer 1002 for the piece [30].
+[2021-04-11 13:51:54] Peer 1001 received the 'have' message from Peer 1002 for the piece [10].
+[2021-04-11 13:51:55] Peer 1001 received the 'have' message from Peer 1002 for the piece [21].
+[2021-04-11 13:51:55] Peer 1001 received the 'have' message from Peer 1002 for the piece [119].
+[2021-04-11 13:51:55] Peer 1001 received the 'have' message from Peer 1002 for the piece [7].
+[2021-04-11 13:51:55] Peer 1001 received the 'have' message from Peer 1002 for the piece [117].
+[2021-04-11 13:51:55] Peer 1001 received the 'have' message from Peer 1002 for the piece [90].
+[2021-04-11 13:51:55] Peer 1001 received the 'have' message from Peer 1002 for the piece [3].
+[2021-04-11 13:51:55] Peer 1001 received the 'have' message from Peer 1002 for the piece [93].
+[2021-04-11 13:51:55] Peer 1001 received the 'have' message from Peer 1002 for the piece [103].
+[2021-04-11 13:51:55] Peer 1001 received the 'have' message from Peer 1002 for the piece [52].
+[2021-04-11 13:51:55] Peer 1001 received the 'have' message from Peer 1002 for the piece [33].
+[2021-04-11 13:51:55] Peer 1001 received the 'have' message from Peer 1002 for the piece [1].
+[2021-04-11 13:51:55] Peer 1001 received the 'have' message from Peer 1002 for the piece [40].
+[2021-04-11 13:51:56] Peer 1001 received the 'have' message from Peer 1002 for the piece [26].
+[2021-04-11 13:51:56] Peer 1001 received the 'have' message from Peer 1002 for the piece [81].
+[2021-04-11 13:51:56] Peer 1001 received the 'have' message from Peer 1002 for the piece [85].
+[2021-04-11 13:51:56] Peer 1001 received the 'have' message from Peer 1002 for the piece [82].
+[2021-04-11 13:51:56] Peer 1001 received the 'have' message from Peer 1002 for the piece [53].
+[2021-04-11 13:51:56] Peer 1001 received the 'have' message from Peer 1002 for the piece [127].
+[2021-04-11 13:51:56] Peer 1001 received the 'have' message from Peer 1002 for the piece [4].
+[2021-04-11 13:51:56] Peer 1001 received the 'have' message from Peer 1002 for the piece [86].
+[2021-04-11 13:51:56] Peer 1001 received the 'have' message from Peer 1002 for the piece [36].
+[2021-04-11 13:51:56] Peer 1001 received the 'have' message from Peer 1002 for the piece [5].
+[2021-04-11 13:51:56] Peer 1001 received the 'have' message from Peer 1002 for the piece [55].
+[2021-04-11 13:51:56] Peer 1001 received the 'have' message from Peer 1002 for the piece [114].
+[2021-04-11 13:51:56] Peer 1001 received the 'have' message from Peer 1002 for the piece [24].
+[2021-04-11 13:51:56] Peer 1001 received the 'have' message from Peer 1002 for the piece [116].
+[2021-04-11 13:51:56] Peer 1001 received the 'have' message from Peer 1002 for the piece [68].
+[2021-04-11 13:51:57] Peer 1001 received the 'have' message from Peer 1002 for the piece [41].
+[2021-04-11 13:51:57] Peer 1001 received the 'have' message from Peer 1002 for the piece [120].
+[2021-04-11 13:51:57] Peer 1001 received the 'have' message from Peer 1002 for the piece [89].
+[2021-04-11 13:51:57] Peer 1001 received the 'have' message from Peer 1002 for the piece [59].
+[2021-04-11 13:51:57] Peer 1001 received the 'have' message from Peer 1002 for the piece [130].
+[2021-04-11 13:51:57] Peer 1001 received the 'have' message from Peer 1002 for the piece [101].
+[2021-04-11 13:51:57] Peer 1001 received the 'have' message from Peer 1002 for the piece [78].
+[2021-04-11 13:51:57] Peer 1001 received the 'have' message from Peer 1002 for the piece [66].
+[2021-04-11 13:51:57] Peer 1001 received the 'have' message from Peer 1002 for the piece [108].
+[2021-04-11 13:51:57] Peer 1001 received the 'have' message from Peer 1002 for the piece [8].
+[2021-04-11 13:51:57] Peer 1001 received the 'have' message from Peer 1002 for the piece [83].
+[2021-04-11 13:51:57] Peer 1001 received the 'have' message from Peer 1002 for the piece [76].
+[2021-04-11 13:51:58] Peer 1001 received the 'have' message from Peer 1002 for the piece [87].
+[2021-04-11 13:51:58] Peer 1001 received the 'have' message from Peer 1002 for the piece [129].
+[2021-04-11 13:51:58] Peer 1001 received the 'have' message from Peer 1002 for the piece [69].
+[2021-04-11 13:51:58] Peer 1001 received the 'have' message from Peer 1002 for the piece [35].
+[2021-04-11 13:51:58] Peer 1001 received the 'have' message from Peer 1002 for the piece [60].
+[2021-04-11 13:51:58] Peer 1001 received the 'have' message from Peer 1002 for the piece [39].
+[2021-04-11 13:51:58] Peer 1001 received the 'have' message from Peer 1002 for the piece [28].
+[2021-04-11 13:51:58] Peer 1001 received the 'have' message from Peer 1002 for the piece [23].
+[2021-04-11 13:51:58] Peer 1001 has the preferred neighbors:.
+[2021-04-11 13:51:58] Peer 1001 received the 'have' message from Peer 1002 for the piece [0].
+[2021-04-11 13:51:58] Peer 1001 received the 'have' message from Peer 1002 for the piece [71].
+[2021-04-11 13:51:58] Peer 1001 received the 'have' message from Peer 1002 for the piece [62].
+[2021-04-11 13:51:58] Peer 1001 received the 'have' message from Peer 1002 for the piece [34].
+[2021-04-11 13:51:59] Peer 1001 received the 'have' message from Peer 1002 for the piece [118].
+[2021-04-11 13:51:59] Peer 1001 received the 'have' message from Peer 1002 for the piece [132].
+[2021-04-11 13:51:59] Peer 1001 received the 'have' message from Peer 1002 for the piece [98].
+[2021-04-11 13:51:59] Peer 1001 received the 'have' message from Peer 1002 for the piece [91].
+[2021-04-11 13:51:59] Peer 1001 received the 'have' message from Peer 1002 for the piece [47].
+[2021-04-11 13:51:59] Peer 1001 received the 'have' message from Peer 1002 for the piece [128].
+[2021-04-11 13:51:59] Peer 1001 received the 'have' message from Peer 1002 for the piece [102].
+[2021-04-11 13:51:59] Peer 1001 received the 'have' message from Peer 1002 for the piece [92].
+[2021-04-11 13:51:59] Peer 1001 received the 'have' message from Peer 1002 for the piece [109].
+[2021-04-11 13:51:59] Peer 1001 received the 'have' message from Peer 1002 for the piece [110].
+[2021-04-11 13:51:59] Peer 1001 received the 'have' message from Peer 1002 for the piece [75].
+[2021-04-11 13:51:59] Peer 1001 received the 'have' message from Peer 1002 for the piece [67].
+[2021-04-11 13:51:59] Peer 1001 received the 'have' message from Peer 1002 for the piece [31].
+[2021-04-11 13:52:00] Peer 1001 received the 'have' message from Peer 1002 for the piece [88].
+[2021-04-11 13:52:00] Peer 1001 received the 'have' message from Peer 1002 for the piece [131].
+[2021-04-11 13:52:00] Peer 1001 received the 'have' message from Peer 1002 for the piece [42].
+[2021-04-11 13:52:00] Peer 1001 received the 'have' message from Peer 1002 for the piece [43].
+[2021-04-11 13:52:00] Peer 1001 received the 'have' message from Peer 1002 for the piece [32].
+[2021-04-11 13:52:00] Peer 1001 received the 'have' message from Peer 1002 for the piece [2].
+[2021-04-11 13:52:00] Peer 1001 received the 'have' message from Peer 1002 for the piece [121].
+[2021-04-11 13:52:00] Peer 1001 received the 'have' message from Peer 1002 for the piece [72].
+[2021-04-11 13:52:00] Peer 1001 received the 'have' message from Peer 1002 for the piece [6].
+[2021-04-11 13:52:00] Peer 1001 received the 'have' message from Peer 1002 for the piece [99].
+[2021-04-11 13:52:00] Peer 1001 received the 'have' message from Peer 1002 for the piece [125].
+[2021-04-11 13:52:00] Peer 1001 received the 'have' message from Peer 1002 for the piece [123].
+[2021-04-11 13:52:00] Peer 1001 received the 'have' message from Peer 1002 for the piece [48].
+[2021-04-11 13:52:00] Peer 1001 received the 'have' message from Peer 1002 for the piece [16].
+[2021-04-11 13:52:00] Peer 1001 received the 'have' message from Peer 1002 for the piece [18].
+[2021-04-11 13:52:01] Peer 1001 received the 'not interested' message from Peer 1002.
+[2021-04-11 13:52:01] Peer 1001 received the 'have' message from Peer 1002 for the piece [54].
+[2021-04-11 13:52:01] Peer 1001 received the 'not interested' message from Peer 1002.
+[2021-04-11 13:52:01] Peer 1001 received the 'have' message from Peer 1002 for the piece [38].
+[2021-04-11 13:53:41] Peer 1001 is connected from Peer 1002.
+[2021-04-11 13:53:41] Peer 1001 has the preferred neighbors:.
+[2021-04-11 13:53:44] Peer 1001 has downloaded the complete file.
+[2021-04-11 13:53:44] Peer 1001 received the 'interested' message from Peer 1002.
+[2021-04-11 13:53:46] Peer 1001 has the preferred neighbors: Peer 1002,.
+[2021-04-11 13:53:46] Peer 1001 received the 'have' message from Peer 1002 for the piece [48].
+[2021-04-11 13:53:47] Peer 1001 received the 'have' message from Peer 1002 for the piece [26].
+[2021-04-11 13:53:47] Peer 1001 received the 'have' message from Peer 1002 for the piece [128].
+[2021-04-11 13:53:47] Peer 1001 received the 'have' message from Peer 1002 for the piece [57].
+[2021-04-11 13:53:47] Peer 1001 received the 'have' message from Peer 1002 for the piece [111].
+[2021-04-11 13:53:47] Peer 1001 received the 'have' message from Peer 1002 for the piece [101].
+[2021-04-11 13:53:47] Peer 1001 received the 'have' message from Peer 1002 for the piece [12].
+[2021-04-11 13:53:48] Peer 1001 received the 'have' message from Peer 1002 for the piece [18].
+[2021-04-11 13:53:48] Peer 1001 received the 'have' message from Peer 1002 for the piece [108].
+[2021-04-11 13:53:48] Peer 1001 received the 'have' message from Peer 1002 for the piece [64].
+[2021-04-11 13:53:48] Peer 1001 received the 'have' message from Peer 1002 for the piece [14].
+[2021-04-11 13:53:48] Peer 1001 received the 'have' message from Peer 1002 for the piece [27].
+[2021-04-11 13:53:48] Peer 1001 received the 'have' message from Peer 1002 for the piece [97].
+[2021-04-11 13:53:48] Peer 1001 received the 'have' message from Peer 1002 for the piece [5].
+[2021-04-11 13:53:49] Peer 1001 received the 'have' message from Peer 1002 for the piece [105].
+[2021-04-11 13:53:49] Peer 1001 received the 'have' message from Peer 1002 for the piece [17].
+[2021-04-11 13:53:49] Peer 1001 received the 'have' message from Peer 1002 for the piece [66].
+[2021-04-11 13:53:49] Peer 1001 received the 'have' message from Peer 1002 for the piece [50].
+[2021-04-11 13:53:49] Peer 1001 received the 'have' message from Peer 1002 for the piece [103].
+[2021-04-11 13:54:21] Peer 1001 is connected from Peer 1002.
+[2021-04-11 13:54:21] Peer 1001 has the preferred neighbors:.
+[2021-04-11 13:54:24] Peer 1001 has downloaded the complete file.
+[2021-04-11 13:54:24] Peer 1001 received the 'interested' message from Peer 1002.
+[2021-04-11 13:54:26] Peer 1001 has the preferred neighbors: Peer 1002,.
+[2021-04-11 13:54:26] Peer 1001 received the 'have' message from Peer 1002 for the piece [28].
+[2021-04-11 13:54:26] Peer 1001 received the 'have' message from Peer 1002 for the piece [85].
+[2021-04-11 13:54:26] Peer 1001 received the 'have' message from Peer 1002 for the piece [26].
+[2021-04-11 13:54:27] Peer 1001 received the 'have' message from Peer 1002 for the piece [104].
+[2021-04-11 13:54:27] Peer 1001 received the 'have' message from Peer 1002 for the piece [80].
+[2021-04-11 13:54:27] Peer 1001 received the 'have' message from Peer 1002 for the piece [66].
+[2021-04-11 13:54:27] Peer 1001 received the 'have' message from Peer 1002 for the piece [44].
+[2021-04-11 13:54:27] Peer 1001 received the 'have' message from Peer 1002 for the piece [23].
+[2021-04-11 13:54:27] Peer 1001 received the 'have' message from Peer 1002 for the piece [102].
+[2021-04-11 13:54:27] Peer 1001 received the 'have' message from Peer 1002 for the piece [132].
+[2021-04-11 13:54:28] Peer 1001 received the 'have' message from Peer 1002 for the piece [24].
+[2021-04-11 13:54:28] Peer 1001 received the 'have' message from Peer 1002 for the piece [47].
+[2021-04-11 13:54:28] Peer 1001 received the 'have' message from Peer 1002 for the piece [36].
+[2021-04-11 13:54:28] Peer 1001 received the 'have' message from Peer 1002 for the piece [5].
+[2021-04-11 13:54:28] Peer 1001 received the 'have' message from Peer 1002 for the piece [81].
+[2021-04-11 13:54:28] Peer 1001 received the 'have' message from Peer 1002 for the piece [65].
+[2021-04-11 13:54:28] Peer 1001 received the 'have' message from Peer 1002 for the piece [86].
+[2021-04-11 13:54:29] Peer 1001 received the 'have' message from Peer 1002 for the piece [73].
+[2021-04-11 13:54:29] Peer 1001 received the 'have' message from Peer 1002 for the piece [89].
+[2021-04-11 13:54:29] Peer 1001 received the 'have' message from Peer 1002 for the piece [128].
+[2021-04-11 13:54:29] Peer 1001 received the 'have' message from Peer 1002 for the piece [125].
+[2021-04-11 13:54:29] Peer 1001 received the 'have' message from Peer 1002 for the piece [97].
+[2021-04-11 13:54:29] Peer 1001 received the 'have' message from Peer 1002 for the piece [92].
+[2021-04-11 13:54:30] Peer 1001 received the 'have' message from Peer 1002 for the piece [31].
+[2021-04-11 13:54:30] Peer 1001 received the 'have' message from Peer 1002 for the piece [91].
+[2021-04-11 13:54:30] Peer 1001 received the 'have' message from Peer 1002 for the piece [119].
+[2021-04-11 13:54:30] Peer 1001 received the 'have' message from Peer 1002 for the piece [129].
+[2021-04-11 13:54:30] Peer 1001 received the 'have' message from Peer 1002 for the piece [30].
