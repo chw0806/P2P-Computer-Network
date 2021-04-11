@@ -32,9 +32,9 @@ public class ActualMessage {
 	}
 	
 	public ActualMessage(int messageLength, MessageType messageType, MessagePayload payload) {
-		this.messageLength = messageLength;
-		this.messageType = messageType;
 		this.payload = payload;
+		this.messageType = messageType;
+		this.messageLength = messageLength;
 	}
 	
 	@Override
@@ -43,7 +43,12 @@ public class ActualMessage {
 				+ messageType.name() + "\n"
 				+ payload.toString();
 	}
-	
+
+	private int convertBytesToInteger(byte[] byteArray) {
+		ByteBuffer wrapped = ByteBuffer.wrap(byteArray);
+		return wrapped.getInt();
+	}
+
 	public void readActualMessage(InputStream in) throws IOException, InterruptedException {
 		while(in.available() < Constant.MINIMUM_SIZE) {
 			Thread.sleep(Constant.SHORT_INTERVAL);
@@ -54,7 +59,8 @@ public class ActualMessage {
 		
 		messageLength = convertBytesToInteger(intArray);
 		messageType = MessageType.values()[in.read()];
-		
+
+		System.out.print("");
 		System.out.print(messageType.ordinal() + " ");
 		
 		switch(messageType) {
@@ -96,11 +102,7 @@ public class ActualMessage {
 		}
 	}
 	
-	private int convertBytesToInteger(byte[] byteArray) {
-		ByteBuffer wrapped = ByteBuffer.wrap(byteArray);
-		return wrapped.getInt();
-	}
-	
+
 	public void writeActualMessage(OutputStream out) throws IOException {
 		byte[] byteArray = convertToByteArray();
 		synchronized(out) {
